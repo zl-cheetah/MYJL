@@ -1,0 +1,158 @@
+/*公共class*/
+body{
+    font-family: "Microsoft Yahei";
+    margin:0;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+ul li{
+    list-style: none;
+}
+/*header*/
+header{
+    color: #2c3e50;
+    background-size: cover;
+    width: 100vh;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+header div{
+    width: 100vh;
+    height: 100vh;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    line-height: 50px;
+    text-align: center;
+    -webkit-animation: all .5s ;
+    -o-animation: all .5s ;
+    animation: myfirst 2.5s infinite alternate;
+}
+/*名字叫myfirst的动画效果，主要是进行header的背景图渐变*/
+/*@keyframes myfirst
+{
+    from {
+        background:rgba(255,255,255,0.3);
+    }
+    to {
+        background:rgba(255,255,255,1);
+    }
+}*/
+
+
+
+/*header div{
+    position: absolute;
+    background:rgba(255,255,255,0.1);
+    background: url("../Images/lufei.jpg") no-repeat;
+}*/
+header h1 {
+    font-family: cursive,'Lato', sans-serif;
+    font-size: 3rem;
+    padding: 30vh 0 0 ;
+}
+header h2 {
+    font-weight: 100;
+    margin-bottom: 40px;
+}
+header > a {
+    background-color: #fff;
+    color: #000000;
+    display: inline-block;
+    font-weight: 500;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid;
+    line-height: 50px;
+    margin: 0 10px;
+}
+header a.gyw {
+    background-color: #2c3e50;
+    color: #ffffff;
+}
+nav{
+    width: 100%;
+    background-color: #2c3e50;
+    /*position: fixed;*/
+}
+
+nav > a{
+    display: inline-block;
+    height: 70px;
+    color: #f5f5f5;
+    line-height: 70px;
+    margin-left: 5%;
+    text-decoration: none;
+}
+nav ul{
+    display: inline-block;
+    float: right;
+}
+nav ul li {
+    margin-right: 25px;
+    line-height: 40px;
+    float: left;
+}
+
+nav ul li a{
+    color: #ffffff;
+}
+
+
+/*section部分*/
+section {
+    text-align: center;
+}
+
+section h3{
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+section hr{
+    background-color: #E87E04;
+    border: none;
+    margin: 0 auto 80px;
+    width: 70px;
+    height: 5px;
+}
+
+section img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+section p{
+    margin: 30px 20%;
+    color: #787978;
+    font-size:14px;
+    text-align: center;
+}
+section p a {
+    color: #2a6496;
+}
+
+.qzyx{
+    background: url("../Images/suolong.jpg") no-repeat ;
+    background-size: 100%;
+}
+.qzqzyxFiexyx{
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+}
+.qzqzyxFiexyx div{
+    justify-content: center;
+}
