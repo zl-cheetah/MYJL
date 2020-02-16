@@ -1,7 +1,9 @@
-/*公共class*/
+/*------------------------------------------------公共class---------------------------------------*/
+
 body {
     font-family: "Microsoft Yahei";
     margin: 0;
+
 }
 
 a {
@@ -12,8 +14,16 @@ a {
 ul li {
     list-style: none;
 }
+hr{
+    background-color: #E87E04;
+    border: none;
+    margin: 0 auto 80px;
+    width: 70px;
+    height: 5px;
+}
 
-/*content部分CSS*/
+/*--------------------------------------------------------------content部分CSS------------------------*/
+
 .content {
     margin: 0 auto;
     padding: 0;
@@ -27,7 +37,7 @@ ul li {
     height: 100vh;
 }
 
-/*header*/
+/*---------------------------------------------------header------------------------------------*/
 header {
     color: #2c3e50;
     background-size: cover;
@@ -59,6 +69,7 @@ header > div {
 }
 
 /*名字叫myfirst的动画效果，主要是进行header的背景图渐变*/
+
 @keyframes myfirst {
     from {
         opacity: 0.4;
@@ -138,45 +149,41 @@ nav ul li a {
     color: #ffffff;
 }
 
-/*section部分*/
-section {
+/*---------------------------------------------------------------jianJie部分----------------------------------*/
+.jianJie section {
     text-align: center;
 }
 
-section h3 {
+.jianJie section h3{
     font-size: 2rem;
     font-weight: 300;
     margin-bottom: 20px;
 }
 
-section hr {
-    background-color: #E87E04;
-    border: none;
-    margin: 0 auto 80px;
-    width: 70px;
-    height: 5px;
-}
-
-section img {
+.jianJie section img {
     width: 200px;
     height: 200px;
     border-radius: 100px;
 }
 
-section p {
+.jianJie section p {
     margin: 30px 20%;
     color: #787978;
     font-size: 14px;
     text-align: center;
 }
 
-section p a {
+.jianJie section p a {
     color: #2a6496;
 }
 
+/*-------------------------------------------------------------------求职意向模快------------------------*/
+
 .qzyx {
-    background: url("../Images/suolong.jpg") no-repeat;
+    /*设置背景图片固定不动*/
+    background: url("../Images/suolong.jpg") no-repeat fixed;
     background-size: 100%;
+    text-align: center;
 }
 
 .qzyx h3 {
@@ -188,8 +195,8 @@ section p a {
 }
 
 .qzyxFiex {
-    text-align: center;
     margin: 0 auto;
+    padding-bottom: 180px;
     width: 80%;
     display: flex;
     justify-content: center;
@@ -198,6 +205,7 @@ section p a {
 .qzyxFiex img {
     width: 80px;
     height: 80px;
+    border-radius: 100px;
 }
 
 .qzyxFiex div {
@@ -210,7 +218,102 @@ section p a {
 }
 
 .qzyxFiex p {
-    text-align: center;
     font-size: 14px;
     margin: 0 0 10px;
+}
+
+/*---------------------------------------------作品集模块-------------------------------------------*/
+
+.zuoPinJi {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    height: 980px;
+}
+.zuoPinJi > P{
+    color: #787978;
+    margin-bottom: 60px;
+    font-size: 14px;
+}
+.zuoPinJi > h3 {
+    font-size: 30px;
+    font-weight: 400;
+    padding: 130px 0 0;
+    line-height: 50px;
+    margin: 0;
+    color: #2c3e50;
+}
+.zuoPinJi hr{
+    margin-bottom: 30px;
+}
+.zuoPinJi > div {
+    display: inline-block;
+    width: 265px;
+    height: 265px;
+    margin: 10px 10px;
+    position: relative;
+}
+/*------------图片与背景图放大动画延迟--------*/
+
+.zuoPinJi > div > img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: -1;
+    transition: all 0.3s;
+
+}
+
+
+/*---------------将图片放大1.05倍-定义houver后的样式-------------*/
+
+.zuoPinJi > div:hover > img{
+    transform: scale(1.05);
+}
+
+.zuoPinJi > div:hover div{
+    display: block;
+}
+
+.zuoPinJi > div:hover > div{
+    opacity: 0.7;
+    transform: scale(1.05);
+
+}
+
+/*--------------定义:hover前样式 改变透明度------------*/
+.zuoPinJi > div div{
+    color: #ffffff;
+    position: absolute;
+    width: 265px;
+    height: 265px;
+    top: 0;
+    left: 0;
+}
+
+.zuoPinJi > div > div{
+    transition: all 0.3s;
+    background-color: #000;
+    opacity: 0;
+
+}
+.zuoPinJi div a div{
+    display: none;
+}
+
+/*--------------hover状态下的文字样式----------*/
+
+.zuoPinJi h4{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 30% auto 15px;
+}
+.zuoPinJi div p{
+    font-size: 14px;
+    font-weight: 400;
+    margin: 10px 30px;
+}
+.zuoPinJi div a div img{
+    width: 25px;
+    height: 25px;
 }
