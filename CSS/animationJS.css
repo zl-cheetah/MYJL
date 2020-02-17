@@ -1,0 +1,97 @@
+@keyframes headerAnimationH1 {
+    0% {
+        padding: 32vh 0 0;
+        opacity: 0;
+    }
+    100% {
+        padding: 30vh 0 0;
+        opacity: 1;
+    }
+}
+
+@keyframes headerAnimationH2{
+    0%{
+        opacity: 0;
+        display: none;
+        margin-top: 50px;
+    }
+    50%{
+        display: block;
+    }
+    100%{
+        opacity: 1;
+        margin: 0;
+    }
+}
+
+
+@keyframes headerAnimationA{
+    0%{
+        opacity: 0;
+        display: none;
+        margin-top: 50px;
+        transform: rotate(0deg);
+    }
+    50%{
+        display: block;
+        margin: 0;
+        transform: rotate(45deg);
+    }
+    90%{
+        transform: rotate(-5deg);
+    }
+    99%{
+        transform: rotate(5deg);
+    }
+    100%{
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+}
+
+/*------------------------------调用各自动画效果---------*/
+
+.bgDongHua80{
+    animation: bgDongHua80 backwards  2s;
+}
+
+.bgDongHua75{
+    animation: bgDongHua75 backwards  2s;
+}
+.bgDongHua70{
+    animation: bgDongHua70 backwards  2s;
+}
+/*  顺序不能调整，必须在后面   */
+.bgDongHua80 ,.bgDongHua75 ,.bgDongHua70{
+    animation-fill-mode:forwards;
+}
+
+/*------------------------设置各自的动画效果---------------------------------*/
+
+@keyframes bgDongHua80 {
+    0% {
+        transform: rotate(-95deg);
+    }
+    100% {
+        transform: rotate(25deg);
+    }
+}
+
+@keyframes bgDongHua75 {
+    0% {
+        transform: rotate(-95deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes bgDongHua70 {
+    0% {
+        transform: rotate(-95deg);
+    }
+    100% {
+        transform: rotate(-25deg);
+    }
+}
+
